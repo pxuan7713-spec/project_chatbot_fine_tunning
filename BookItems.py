@@ -1,6 +1,7 @@
 from typing import Optional
 from transformers import AutoTokenizer
 from datasets import Dataset
+import re
 
 # Constants
 BASE_MODEL = "meta-llama/Meta-Llama-3.1-8B"
@@ -121,4 +122,5 @@ class BookItem:
     def __repr__(self):
         """String representation of this BookItem"""
         return f"<{self.title} = ${self.price}>"
+
 
